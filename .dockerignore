@@ -1,0 +1,4 @@
+.venv
+.git
+.gitignore
+raw_data
