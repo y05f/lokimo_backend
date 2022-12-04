@@ -16,17 +16,17 @@ The samples JSON file contains 250 of real estate advertisements. Some listings'
 
 advertisement data can be mandatory, optional (not given in some cases) or null/blank. The choice of making some fields mandatory and others optional was made on the provided data samples where I noticed some values were always provided and others sometimes are not and may be null or blank.
 
-The database schema follows the same structure of the provided json file. It consists of 4 tables (Advertisement, Data, Status and Position).
+The database schema follows the same structure of the provided json file. It consists of 4 tables (**Advertisement**, **Data**, **Status** and **Position**).
 
-The main table is called "Advertisement". Each advertisment is a listing of a house or an appartement to sell or to rent.
+The main table is called **Advertisement**. Each advertisment is a listing of a house or an appartement to sell or to rent.
 
-The advertisement table contains some fields like price, rooms, surface, etc. and has two other tables called "Data" and "Position".
+The advertisement table contains some fields like price, rooms, surface, etc. and has two other tables called **Data** and **Position**.
 
-The "Data" table contains details of the listing including the table "Status"
+The **Data** table contains details of the listing including the table **Status**
 
-The "Status" table gives details about the status of the listing.
+The **Status** table gives details about the status of the listing.
 
-The "Position" table has the location of the property in terms of longitude and latitude coordinates. This table use GeoDjango Point data field.
+The **Position** table has the location of the property in terms of longitude and latitude coordinates. This table use **GeoDjango Point data field**.
 
 ## APIs
 
@@ -90,7 +90,7 @@ To initialize data with the given samples from JSON file type :
 docker-compose exec web  python manage.py resetdata --delete
 ```
 
-This will delete all existing data and insert raw data from the json file "lokimo-dataset-bakend-test.json" to project's database.
+This will delete all existing data and insert raw data from the json file **lokimo-dataset-bakend-test.json** to project's database.
 
 You can omit the parameter --delete if you want to insert raw data wihout deleting the existing one.
 
@@ -104,7 +104,7 @@ The script behind this command is located in the management folder in advertisem
 docker-compose exec web  python manage.py test
 ```
 
-- The testing phasse consists of 7 tests of all the endpoints where the file "test_data.json" is used as testing database.
+- The testing phasse consists of 7 tests of all the endpoints where the file **test_data.json** is used as testing database.
 
 ## How to read and explore the project
 
@@ -136,9 +136,9 @@ docker-compose exec web  python manage.py test
 │   ├── settings.py # django project settings
 │   ├── urls.py # django project main urls
 ├── docker-compose.yml
-├── lokimo-dataset-backend-test.json
+├── lokimo-dataset-backend-test.json # raw data provided
 ├── requirements.txt
-└── test_data.json
+└── test_data.json # test data created for unit tests
 ```
 
 ## License
