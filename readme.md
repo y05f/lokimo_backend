@@ -80,6 +80,7 @@ docker-compose up -d --build
 ```
 
 - Open [http://localhost:8000](http://localhost:8000) and you will see the django rest framework API documentations using swagger-ui.
+  ![screenshot](screenshot.png)
 
 ## Initialize data
 
