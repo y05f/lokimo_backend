@@ -73,7 +73,7 @@ git clone https://github.com/y05f/lokimo_backend.git
 cd lokimo_backend
 ```
 
-- Start docker then build the images and run the containers:
+- Start docker then build the image and run the container:
 
 ```bash
 docker-compose up -d --build
