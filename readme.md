@@ -12,7 +12,9 @@ To simulate and test the project, data samples were provided in a JSON file name
 
 ## Data
 
-The samples JSON file contains 250 of real estate advertisements. Some listings' data were missing or null while others were completly provided on the 255 examples. I followed the same pattern if a data field can be mandatory (present on 250 examples), optional (not given in some cases) or null (exist with null in some examples).
+The samples JSON file contains 250 of real estate advertisements. Some listings' data were missing or null while others were completly provided on the 255 examples.
+
+advertisement data can be mandatory, optional (not given in some cases) or null/blank. The choice of making some fields mandatory and others optional was made on the provided data samples where I noticed some values were always provided and others sometimes are not and may be null or blank.
 
 The database schema follows the same structure of the provided json file. It consists of 4 tables (Advertisement, Data, Status and Position).
 
@@ -45,7 +47,7 @@ The project API services are :
 - get all the advertisement with a given city code.
 
 ```bash
-  http://localhost:8000/ads/city/{city code}
+  http://localhost:8000/ads/city/{city-code}
 ```
 
 - get the average meter square price of advertisements within a distance from a given location.
@@ -81,7 +83,7 @@ docker-compose up -d --build
 
 ## Initialize data
 
-- To initialize data with the given samples from JSON file type :
+To initialize data with the given samples from JSON file type :
 
 ```bash
 docker-compose exec web  python manage.py resetdata --delete
@@ -101,7 +103,7 @@ The script behind this command is located in the management folder in advertisem
 docker-compose exec web  python manage.py test
 ```
 
-- The testing phasse consists of 7 tests of all the APIs where the file "test_data.json" is used as testing database.
+- The testing phasse consists of 7 tests of all the endpoints where the file "test_data.json" is used as testing database.
 
 ## How to read and explore the project
 
