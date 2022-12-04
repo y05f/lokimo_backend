@@ -8,7 +8,7 @@ The project is backend application that uses [Django REST Framework](https://www
 
 The APIs serve data about real estate lisintgs located in Loire-Atlantique departement on the west coast of France.
 
-To simulate and test the project, data samples were provided in a JSON file named "lokimo-dataset-bakend-test.json".
+To simulate and test the project, data samples were provided in a JSON file named **lokimo-dataset-bakend-test.json**.
 
 ## Data
 
