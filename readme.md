@@ -109,9 +109,9 @@ docker-compose exec web  python manage.py test
 ## How to read and explore the project
 
 - The project folder contains 3 main folders (advertisement, api, backend).
-- The backend folder is the main django folder project
-- The advertisement folder is a django app which contains the advertisement models and script to reset data using "lokimo-dataset-bakend-test.json"
-- The api folder contains the serilizers, the views and urls plus the test units.
+- The **backend** folder is the main django folder project
+- The **advertisement** folder is a django app which contains the advertisement models and script to reset data using "lokimo-dataset-bakend-test.json"
+- The **api** folder contains the serilizers, the views and urls plus the test units.
 - The following tree folder shows only the files that I have edited or created excluding the other untouched or default files and folders:
 
 ```bash
