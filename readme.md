@@ -83,6 +83,7 @@ The advertisement folder is a django app which contains the advertisement models
 the api folder contains the serilizers, the views and urls plus the test units.
 The following tree folder shows only the files that I have edited or created excluding the other untouched or default files and folders:
 
+```bash
 ├── Dockerfile
 ├── advertisement
 │   ├── admin.py # where models are registered to be accessed by admin
@@ -107,6 +108,7 @@ The following tree folder shows only the files that I have edited or created exc
 ├── lokimo-dataset-backend-test.json
 ├── requirements.txt
 └── test_data.json
+```
 
 ## License
 
@@ -115,7 +117,11 @@ The following tree folder shows only the files that I have edited or created exc
 ## Credits
 
 [Django for Professionals Production websites with Python & Django](https://djangoforprofessionals.com/) by William S. Vincent
+
 [https://docs.djangoproject.com/en/4.1/howto/](https://docs.djangoproject.com/en/4.1/howto/)
+
 [https://www.django-rest-framework.org/](https://www.django-rest-framework.org/)
+
 [https://docs.djangoproject.com/en/4.1/ref/contrib/gis/](https://docs.djangoproject.com/en/4.1/ref/contrib/gis/)
+
 [https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin](https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin)
