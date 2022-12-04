@@ -147,12 +147,12 @@ docker-compose exec web  python manage.py test
 
 ## Credits
 
-- [Django for Professionals Production websites with Python & Django](https://djangoforprofessionals.com/) by William S. Vincent
+- The book [Django for Professionals Production websites with Python & Django](https://djangoforprofessionals.com/) by William S. Vincent
 
-- [https://docs.djangoproject.com/en/4.1/howto/](https://docs.djangoproject.com/en/4.1/howto/)
+- Django official doc [https://docs.djangoproject.com/en/4.1/howto/](https://docs.djangoproject.com/en/4.1/howto/)
 
-- [https://www.django-rest-framework.org/](https://www.django-rest-framework.org/)
+- Django REST framework official doc [https://www.django-rest-framework.org/](https://www.django-rest-framework.org/)
 
-- [https://docs.djangoproject.com/en/4.1/ref/contrib/gis/](https://docs.djangoproject.com/en/4.1/ref/contrib/gis/)
+- GeoDjango official doc [https://docs.djangoproject.com/en/4.1/ref/contrib/gis/](https://docs.djangoproject.com/en/4.1/ref/contrib/gis/)
 
-- [https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin](https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin)
+- drf-spectacular official doc [https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin](https://drf-spectacular.readthedocs.io/en/latest/readme.html#take-it-for-a-spin)
