@@ -18,6 +18,7 @@ class Command(BaseCommand):
         advertisement = Advertisement.objects.all()
         if options["delete"]:
             advertisement.delete()
+            self.stdout.write(self.style.SUCCESS("All current data are deleted"))
 
         f = open("lokimo-dataset-backend-test.json")
         rawdata = json.load(f)

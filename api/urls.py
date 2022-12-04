@@ -1,12 +1,20 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularRedocView,
+    SpectacularSwaggerView,
+)
+
+# from rest_framework.documentation import include_docs_urls
 from . import views
+
 
 urlpatterns = [
     path("ads/", views.AdvertisementList.as_view(), name="list-post-ads"),
     path(
         "ads/<int:pk>/",
-        views.AdvertisementRetrieveDelete.as_view(),
+        views.AdvertisementDetail.as_view(),
         name="get-delete-ads",
     ),
     path(
@@ -22,6 +30,11 @@ urlpatterns = [
         views.AdvertisementPriceEstimator.as_view(),
         name="estimate-price",
     ),
+    path("schema/", SpectacularAPIView.as_view(), name="schema"),
+    # Optional UI:
+    path(
+        "",
+        SpectacularSwaggerView.as_view(url_name="schema"),
+        name="swagger-ui",
+    ),
 ]
-
-urlpatterns = format_suffix_patterns(urlpatterns)

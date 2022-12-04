@@ -8,8 +8,7 @@ from django.contrib.gis.geos import Point
 
 class Position(models.Model):
     location = models.PointField(geography=True, default=Point(0.0, 0.0))
-    # lat = models.FloatField()
-    # lng = models.FloatField()
+
     @property
     def lng(self):
         return self.location.x
