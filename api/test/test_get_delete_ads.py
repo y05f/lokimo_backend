@@ -46,5 +46,5 @@ class AdvertisementGetDeleteTest(APITestCase):
         """
         example_ad = Advertisement.objects.all()
         url = reverse("get-delete-ads", kwargs={"pk": example_ad[0].id})
-        response = self.client.delete(url, pk=2, format=None)
+        response = self.client.delete(url, format=None)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
